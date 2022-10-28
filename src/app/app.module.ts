@@ -6,14 +6,30 @@ import { AppComponent } from './app.component';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { FormsModule } from '@angular/forms';
 
+import { EmployeeentryComponent } from './employeeentry/employeeentry.component';
+import { RouterModule,Routes } from '@angular/router';
+
+
+
+const appRoutes:Routes=[
+  {
+    path:"",component:AdminloginComponent
+  },
+  {
+    path:"entry",component:EmployeeentryComponent
+  }
+]
 @NgModule({
   declarations: [
     AppComponent,
-    AdminloginComponent
+    AdminloginComponent,
+  
+    EmployeeentryComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    RouterModule.forRoot(appRoutes),
     FormsModule
   ],
   providers: [],
