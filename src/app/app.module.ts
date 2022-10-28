@@ -8,7 +8,9 @@ import { FormsModule } from '@angular/forms';
 
 import { EmployeeentryComponent } from './employeeentry/employeeentry.component';
 import { RouterModule,Routes } from '@angular/router';
-
+import { ViewemployeeComponent } from './viewemployee/viewemployee.component';
+import{HttpClientModule} from '@angular/common/http';
+import { SearchemployeeComponent } from './searchemployee/searchemployee.component';
 
 
 const appRoutes:Routes=[
@@ -17,6 +19,12 @@ const appRoutes:Routes=[
   },
   {
     path:"entry",component:EmployeeentryComponent
+  },
+  {
+    path:"view",component:ViewemployeeComponent
+  },
+  {
+    path:"search",component:SearchemployeeComponent
   }
 ]
 @NgModule({
@@ -24,13 +32,17 @@ const appRoutes:Routes=[
     AppComponent,
     AdminloginComponent,
   
-    EmployeeentryComponent
+    EmployeeentryComponent,
+       ViewemployeeComponent,
+       SearchemployeeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(appRoutes),
-    FormsModule
+    FormsModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
