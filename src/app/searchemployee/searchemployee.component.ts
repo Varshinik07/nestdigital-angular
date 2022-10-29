@@ -22,13 +22,20 @@ readValues=()=>{
     }
   )
 }
+
+updateemployee=()=>{
+  this.myapi.updateemployee(this.data[0]).subscribe(
+    (response)=>{
+      alert("updated successfully")
+    }
+  )
+}
+
+
+
+
 data:any={
-  "id": 8,
-        "empcode": 51226,
-        "name": "jacky",
-        "email": "jacky@gmail.com",
-        "password": 12365,
-        "doj": "doj"
+ 
 }
 
 
