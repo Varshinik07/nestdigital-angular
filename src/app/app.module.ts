@@ -13,6 +13,7 @@ import{HttpClientModule} from '@angular/common/http';
 import { SearchemployeeComponent } from './searchemployee/searchemployee.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SecurityentryComponent } from './securityentry/securityentry.component';
+import { ViewsecurityComponent } from './viewsecurity/viewsecurity.component';
 
 
 const appRoutes:Routes=[
@@ -45,7 +46,8 @@ const appRoutes:Routes=[
        ViewemployeeComponent,
        SearchemployeeComponent,
        NavbarComponent,
-       SecurityentryComponent
+       SecurityentryComponent,
+       ViewsecurityComponent
   ],
   imports: [
     BrowserModule,

@@ -22,4 +22,10 @@ export class ApiService {
    updateemployee(data:any){
     return this.http.post("http://localhost:8080/editemployee",data)
    }
+   viewsecurity=()=>{
+    return this.http.get("http://localhost:8080/viewsecurity")
+  }
+  deletesecurity(data:any){
+    return this.http.post("http://localhost:8080/deletesecurity",data)
+   }
 }
