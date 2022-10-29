@@ -22,7 +22,21 @@ readValues=()=>{
     }
   )
 }
-data:any=[]
+
+updateemployee=()=>{
+  this.myapi.updateemployee(this.data[0]).subscribe(
+    (response)=>{
+      alert("updated successfully")
+    }
+  )
+}
+
+
+
+
+data:any={
+ 
+}
 
 
   ngOnInit(): void {
