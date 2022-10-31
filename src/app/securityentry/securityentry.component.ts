@@ -26,6 +26,12 @@ readValues=()=>{
     "password":this.password
   }
   console.log(data)
+  this.myapi.addsecurity(data).subscribe(
+    (data)=>{
+  
+      alert ("data added successfully")
+    }
+    )
 }
   ngOnInit(): void {
   }
