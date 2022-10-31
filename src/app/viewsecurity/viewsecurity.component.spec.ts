@@ -1,18 +1,18 @@
 // import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-// import { AdminloginComponent } from './adminlogin.component';
+// import { ViewsecurityComponent } from './viewsecurity.component';
 
-// describe('AdminloginComponent', () => {
-//   let component: AdminloginComponent;
-//   let fixture: ComponentFixture<AdminloginComponent>;
+// describe('ViewsecurityComponent', () => {
+//   let component: ViewsecurityComponent;
+//   let fixture: ComponentFixture<ViewsecurityComponent>;
 
 //   beforeEach(async () => {
 //     await TestBed.configureTestingModule({
-//       declarations: [ AdminloginComponent ]
+//       declarations: [ ViewsecurityComponent ]
 //     })
 //     .compileComponents();
 
-//     fixture = TestBed.createComponent(AdminloginComponent);
+//     fixture = TestBed.createComponent(ViewsecurityComponent);
 //     component = fixture.componentInstance;
 //     fixture.detectChanges();
 //   });
