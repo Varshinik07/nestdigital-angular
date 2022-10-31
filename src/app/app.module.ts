@@ -15,6 +15,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SecurityentryComponent } from './securityentry/securityentry.component';
 import { ViewsecurityComponent } from './viewsecurity/viewsecurity.component';
 import { AddleaveComponent } from './addleave/addleave.component';
+import { ViewleaveComponent } from './viewleave/viewleave.component';
 
 
 const appRoutes:Routes=[
@@ -49,7 +50,8 @@ const appRoutes:Routes=[
        NavbarComponent,
        SecurityentryComponent,
        ViewsecurityComponent,
-       AddleaveComponent
+       AddleaveComponent,
+       ViewleaveComponent
   ],
   imports: [
     BrowserModule,
