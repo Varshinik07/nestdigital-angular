@@ -31,4 +31,10 @@ export class ApiService {
   deletesecurity(data:any){
     return this.http.post("http://localhost:8080/deletesecurity",data)
    }
+   addleave=(data:any)=>{
+    return this.http.post("http://localhost:8080/addleave",data)
+   }
+   viewleave=()=>{
+    return this.http.get("http://localhost:8080/viewleave")
+   }
 }
